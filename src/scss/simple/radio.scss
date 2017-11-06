@@ -1,0 +1,23 @@
+#{$prefix}-radio {
+  border: 2px solid currentColor;
+  border-radius: 50%;
+
+  &::after {
+    background-color: currentColor;
+    border-radius: 50%;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transform-origin: center;
+    transition-duration: $transition-duration;
+    width: 100%;
+
+    #{$prefix}-trigger:checked + &::after,
+    &.active::after {
+      transform: scale(.75);
+    }
+  }
+}

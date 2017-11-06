@@ -1,0 +1,19 @@
+#{$prefix}-checkbox {
+  border: 2px solid currentColor;
+
+  &::after {
+    background-color: currentColor;
+    content: '';
+    height: 100%;
+    position: absolute;
+    transform: scale(0) rotateZ(0);
+    transform-origin: center;
+    transition-duration: $transition-duration;
+    width: 100%;
+  }
+
+  #{$prefix}-trigger:checked + &::after,
+  &.active::after {
+    transform: scale(.75) rotateZ(180deg);
+  }
+}

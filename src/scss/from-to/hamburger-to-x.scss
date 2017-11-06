@@ -1,0 +1,42 @@
+#{$prefix}-hamburger-to-x {
+  span {
+    $size: 2px;
+
+    height: 2px;
+    left: 0;
+    top: calc(50% - #{$size / 2});
+    transition-duration: $transition-duration;
+    width: 100%;
+
+    &:first-of-type {
+      top: 0;
+    }
+
+    &:last-of-type {
+      top: calc(100% - #{$size});
+    }
+  }
+
+  & > input:checked ~ span,
+  &.active > span {
+    opacity: 0;
+
+    &:first-of-type,
+    &:last-of-type {
+      opacity: 1;
+      width: 145%;
+    }
+
+    &:first-of-type {
+      top: 0;
+      transform: rotateZ(45deg);
+      transform-origin: top left;
+    }
+
+    &:last-of-type {
+      top: 100%;
+      transform: rotateZ(-45deg);
+      transform-origin: bottom left;
+    }
+  }
+}

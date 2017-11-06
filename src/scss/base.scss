@@ -1,0 +1,19 @@
+#{$prefix} {
+  cursor: pointer;
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  width: 1em;
+
+  span {
+    background-color: currentColor;
+    display: inline-block;
+    position: absolute;
+  }
+
+  input[type='checkbox'],
+  input[type='radio'],
+  &-trigger {
+    display: none;
+  }
+}

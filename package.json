@@ -4,7 +4,7 @@
   "description": "An agnostic collection of CSS only, multi purpose and awesome interactive icons",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "gulp"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/cssbrasil/animated-icons#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   }
