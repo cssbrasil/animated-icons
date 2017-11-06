@@ -1,0 +1,26 @@
+{
+  "name": "@cssbrasil/animated-icons",
+  "version": "0.0.1",
+  "description": "An agnostic collection of CSS only, multi purpose and awesome interactive icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssbrasil/animated-icons.git"
+  },
+  "keywords": [
+    "icons",
+    "css-only",
+    "css",
+    "npm-package",
+    "front-end"
+  ],
+  "author": "css-only",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cssbrasil/animated-icons/issues"
+  },
+  "homepage": "https://github.com/cssbrasil/animated-icons#readme"
+}
