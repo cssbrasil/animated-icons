@@ -4,7 +4,7 @@
 ## Roadmap to launch
 - [NPM package](https://github.com/cssbrasil/animated-icons/issues/7)
 - Import individual icons
-- Optmize output
+- ~~Optmize output~~
 - Doc everything (from usage to contribuition)
 - More icons!
 
