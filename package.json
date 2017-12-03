@@ -1,7 +1,7 @@
 {
   "name": "@cssbrasil/animated-icons",
-  "version": "0.0.1",
-  "description": "An agnostic collection of CSS only, multi purpose and awesome interactive icons",
+  "version": "0.0.2",
+  "description": "🎁 An agnostic collection of CSS only, multi purpose and awesome interactive icons!",
   "main": "src/scss/animated-icons.scss",
   "scripts": {
     "dev": "gulp dev",
@@ -33,5 +33,8 @@
     "gulp-sourcemaps": "^2.6.1",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13"
   }
 }
