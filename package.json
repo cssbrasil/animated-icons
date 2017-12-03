@@ -2,9 +2,11 @@
   "name": "@cssbrasil/animated-icons",
   "version": "0.0.1",
   "description": "An agnostic collection of CSS only, multi purpose and awesome interactive icons",
-  "main": "index.js",
+  "main": "src/scss/animated-icons.scss",
   "scripts": {
-    "compile": "gulp"
+    "dev": "gulp dev",
+    "prod": "gulp prod",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
