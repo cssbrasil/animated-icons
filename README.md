@@ -14,7 +14,7 @@
 
 ## What to expect for near future
 - Icon packs
-- [Web components abstraction](https://github.com/cssbrasil/animated-icons/issues/4#issuecomment-340216000), like [that](https://codepen.io/ivanaugustobd/pen/bYoWLE?editors=1000)
+- [Web components abstraction](https://github.com/cssbrasil/animated-icons/issues/4#issuecomment-340216000), like [this Vue version](https://codepen.io/ivanaugustobd/pen/bYoWLE?editors=1000) and [this React version](https://codepen.io/ivanaugustobd/pen/NwoZPQ?editors=0010)
 
 ## What to expect for far future
 - Icon pack generator with suggestions based on icons commonly downloaded together
