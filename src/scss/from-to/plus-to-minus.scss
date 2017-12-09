@@ -25,7 +25,6 @@
     }
   }
 
-  & > input:checked ~ span,
   &.active > span {
     transform: none;
   }
