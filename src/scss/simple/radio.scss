@@ -14,10 +14,10 @@
     transform-origin: center;
     transition-duration: $transition-duration;
     width: 100%;
+  }
 
-    #{$prefix}-trigger:checked + &::after,
-    &.active::after {
-      transform: scale(.75);
-    }
+  #{$prefix}-trigger:checked + &::after,
+  &.active::after {
+    transform: scale(.75);
   }
 }
