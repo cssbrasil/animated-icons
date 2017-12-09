@@ -1,0 +1,29 @@
+#{$prefix}-minus-to-plus {
+  span {
+    $thickness: 2px;
+
+    background-color: currentColor;
+    display: none;
+    height: $thickness;
+    left: 0;
+    top: calc(50% - #{$thickness / 2});
+    transition-duration: $transition-duration;
+    width: 100%;
+
+    &:first-of-type,
+    &:last-of-type {
+      display: inline-block;
+      transform-origin: center;
+    }
+  }
+
+  &.active > span {
+    &:first-of-type {
+      transform: rotateZ(180deg);
+    }
+
+    &:last-of-type {
+      transform: rotateZ(270deg);
+    }
+  }
+}
