@@ -26,22 +26,77 @@
       .ai {
         margin-right: 5px;
       }
+
+      .grid {
+        align-items: center;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
     </style>
   </head>
 
   <body>
-    <h1>Animated Icons</h1>
-    <h2>🎁 An agnostic collection of CSS only, multi purpose and awesome interactive icons!</h2>
-    <hr>
+    <main>
+      <h1>Animated Icons</h1>
+      <h2>🎁 An agnostic collection of CSS only, multi purpose and awesome interactive icons!</h2>
+      <hr>
 
-    <h3>"Simple" icons</h3>
-    <!-- checkbox -->
-    <label>
-      <input type="checkbox" class="ai-trigger">
-      <div class="ai ai-checkbox"></div>
-      <span>.ai-checkbox</span>
-    </label>
+      <h3>"Simple" icons <button onclick="toggleAllActive('grid-simple')">Toogle all active</button></h3>
+      <div class="grid" id="grid-simple">
+        <!-- checkbox -->
+        <label>
+          <input type="checkbox" class="ai-trigger">
+          <i class="ai ai-checkbox"></i>
+          <span>.ai-checkbox</span>
+        </label>
 
-    <h3>"From - To" icons</h3>
+        <!-- radio -->
+        <label>
+          <input type="radio" class="ai-trigger" name="radio">
+          <i class="ai ai-radio"></i>
+          <span>.ai-radio</span>
+        </label>
+        <label>
+          <input type="radio" class="ai-trigger" name="radio">
+          <i class="ai ai-radio"></i>
+          <span>.ai-radio</span>
+        </label>
+      </div>
+
+      <hr>
+
+      <h3>"From - To" icons <button onclick="toggleAllActive('grid-from-to')">Toogle all active</button></h3>
+      <div class="grid" id="grid-from-to">
+        <!-- hamburger to x -->
+        <div>
+          <i class="ai ai-hamburger-to-x">
+            <span></span>
+            <span></span>
+            <span></span>
+          </i>
+          <span>.ai-hamburger-to-x</span>
+        </div>
+
+        <!-- plus to minus -->
+        <div>
+          <i class="ai ai-plus-to-minus">
+            <span></span>
+            <span></span>
+            <span></span>
+          </i>
+          <span>.ai-plus-to-minus</span>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const toggleAllActive = gridId => {
+        const grid = document.getElementById(gridId)
+        const icons = grid.querySelectorAll('.ai')
+
+        icons.forEach(icon => icon.classList.toggle('active'))
+      }
+    </script>
   </body>
 </html>
